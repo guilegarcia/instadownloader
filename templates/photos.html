@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Fotos de {{ title_instagram }}</title>
+{% endblock title %}
+
+{% block body %}
+    <h1>Fotos de {{ title_instagram }}</h1>
+    {% for photo in list_photos %}
+        <a href="{{ photo }}" target="_blank"><img src="{{ photo }}" class="img-thumbnail" width="304"
+                                                   height="236"></a>
+        {#    data-toggle="modal" data-target="#openImage"#}
+        <!-- TODO gerar o modal individual com o id -->
+    {% endfor list_photos %}
+{% endblock body %}

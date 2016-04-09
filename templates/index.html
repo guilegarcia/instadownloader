@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block body %}
+    {#    <form action="{% url 'instagram_photo' %}" method="post">{% csrf_token %}#}
+    {#        <label for="foto">Foto: </label>#}
+    {#        <input id="foto" type="text" name="foto" required/>#}
+    {#        <input type="submit" value="Baixar">#}
+    {#    </form>#}
+    <div class="row">
+        <div class="column-md-12">
+            <h1>Download de fotos do instagram</h1>
+            <form role="form" class="col-md-4">
+                <div class="form-group">
+                    <label for="foto">Foto:</label>
+                    <input type="text" class="form-control" id="foto">
+                </div>
+                <button type="submit" class="btn btn-default">Baixar</button>
+            </form>
+        </div>
+    </div>
+
+{% endblock body %}
